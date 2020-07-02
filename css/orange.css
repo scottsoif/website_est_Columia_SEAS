@@ -2459,10 +2459,16 @@ fieldset:disabled a.btn {
   border-color: #ff6d00;
 }
 .btn-primary:hover {
+  color: #ff6d00;
+  background-color: transparent;
+  background-image: none;
+  border-color: #ff6d00;
+}
+/* .btn-primary:hover {
   color: #ffffff;
   background-color: #d95d00;
   border-color: #cc5700;
-}
+} */
 .btn-primary:focus,
 .btn-primary.focus {
   box-shadow: 0 0 0 0.2rem rgba(255, 109, 0, 0.5);
@@ -9622,19 +9628,44 @@ Custom CSS
   position: relative;
 }
 
-/*features list*/
-ul.features-list {
+ul.hard-skills {
+  display: flex;
+  width: 100%;
+  padding: 0;
+
+  margin: 0rem;
+  list-style: none;
+  font-size: 17px;
+  justify-content: space-between;
+}
+ul.hard-skills li {
+  line-height: 1.5;
+}
+ul.hard-skills li:before {
+  position: relative;
+  font-family: "FontAwesome";
+  content: "\f105";
+  color: #ff6d00;
+  margin: 0 12px 0 0;
+}
+ul.hard-skills a {
+  color: #495057;
+}
+
+ul.projects_list {
   margin-top: 1rem;
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
   font-size: 17px;
 }
-ul.features-list li {
-  line-height: 1.5;
+ul.projects_list li {
+  line-height: 1.75;
   padding-bottom: 0.5rem;
+  padding-left: 1.28571429em;
+  text-indent: -1.128571429em;
 }
-ul.features-list li:before {
+ul.projects_list li:before {
   position: relative;
   font-family: "FontAwesome";
   content: "\f105";
