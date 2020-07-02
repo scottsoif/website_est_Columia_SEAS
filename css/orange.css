@@ -3205,10 +3205,11 @@ tbody.collapse.show {
   height: 0;
   margin: 0.5rem 0;
   overflow: hidden;
-  border-top: 1px solid #000000;
+  border-top: 1px solid #ff6d00;
   padding-left: 20px;
   padding-right: 20px;
-  margin-left:15px; margin-right:15px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .dropdown-item {
@@ -3806,6 +3807,7 @@ tbody.collapse.show {
   margin-top: 0px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+  font-size: 20px;
 }
 
 .nav-pills .nav-link {
@@ -9646,6 +9648,7 @@ ul.hard-skills {
   font-size: 17px;
   justify-content: space-between;
 }
+
 ul.hard-skills li {
   line-height: 1.5;
 }
@@ -9674,6 +9677,29 @@ ul.projects_list li {
   text-indent: -1.128571429em;
 }
 ul.projects_list li:before {
+  position: relative;
+  font-family: "FontAwesome";
+  content: "\f105";
+  color: #ff6d00;
+  margin: 0 12px 0 0;
+}
+
+ul.experience {
+  margin-top: 0rem;
+  margin-bottom: 0ren;
+  padding-left: 0;
+  list-style: none;
+  font-size: 17px;
+}
+ul.experience li {
+  line-height: 1.75;
+  padding-bottom: 0.2rem;
+  padding-left: 1.28571429em;
+  text-indent: -1.128571429em;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+ul.experience li:before {
   position: relative;
   font-family: "FontAwesome";
   content: "\f105";

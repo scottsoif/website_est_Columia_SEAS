@@ -50,7 +50,7 @@
                     <a class="nav-link page-scroll" href="#patents">Patents & Publications</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#pricing">Experience</a>
+                    <a class="nav-link page-scroll" href="#experience">Experience</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="#faq">FAQ</a>
@@ -237,18 +237,53 @@
                         </a>
                     </p>
                     <p class="lead mt-3" style="display: inline;">
-                        <a href="https://github.com/scottsoif/CrowdIt#demos"
-                            class="btn btn-primary btn-sm d-inline-flex flex-row align-items-center">
-                            See Demo on GitHub <i class="fa fa-github" style="padding-left:10px"></i><span class="ml-1"
-                                width="18" height="18" data-feather="chevron-right"></span>
-                        </a>
-                    </p>
+                        <button
+                            class=" btn btn-primary toggle-drp-dwn btn-sm d-inline-flex flex-row align-items-center"><span
+                                id="crowedIt-demo">See demo</span><i class="fa fa-code"
+                                style="padding-left:10px"></i></span>
+                        </button>
 
+                    </p>
+                    <div class="drp-dwn bg-white raised-box rounded mt-2"
+                        style="display: none; border: 2px solid #ff6d00; padding:10px" aria-labelledby="two">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <p>Tap on any business market to get current occupancy</p>
+                                <img src="demo_GIFs/CrowdIt_Tap_marker.gif" style="width:100%"></iframe>
+                            </div>
+                            <div class="col-sm-4">
+                                <p>Search your favorite store to see how crowded it is</p>
+                                <img src="demo_GIFs/CrowdIt_Place_Search.gif" style="width:100%"></iframe>
+                            </div>
+                            <div class="col-sm-4">
+                                <p>Toggle the switch to allow anonymous background tracking</p>
+
+                                <img src="demo_GIFs/CrowdIt_BackgroundLocationBtn.gif" style="width:100%"></iframe>
+                            </div>
+
+                        </div>
+                        <!-- <div class="row">
+                            <div class="col-sm-4">
+                                <img src="demo_GIFs/CrowdIt_Tap_marker.gif" style="width:100%"></iframe>
+
+                            </div>
+                            <div class="col-sm-4">
+                                <img src="demo_GIFs/CrowdIt_Place_Search.gif" style="width:100%"></iframe>
+
+                            </div>
+                            <div class="col-sm-4">
+                                <img src="demo_GIFs/CrowdIt_BackgroundLocationBtn.gif" style="width:100%"></iframe>
+                            </div>
+
+                        </div> -->
+                    </div>
                 </div>
+
             </div>
+            <!-- TODO offset on scroll button -->
             <div class="row mt-5">
                 <div class="col-md-10 my-auto text-center text-md-left pt-5 pt-md-0">
-                    <h2 class="display-5 about-me-title"><b>TAME-AD Joint Cohort Explorer</b></h2>
+                    <h2 class="display-5 about-me-title" id="thompson-CMS"><b>TAME-AD Joint Cohort Explorer</b></h2>
                     <h2 class="display-5 text-muted about-me-title" style="padding-left:4px;"> is a tool for
                         Alzheimer researchers.</h2>
                     <p class="lead text-muted">Python | Django | neo4j </p>
@@ -317,7 +352,7 @@
         </div>
     </section>
 
-    <!-- reviews section -->
+    <!-- patents section -->
     <section class="py-7 bg-light" id="patents">
         <div class="container">
             <div class="row">
@@ -325,7 +360,7 @@
                     <h2 class="display-4">Patents & Publications</h2>
                 </div>
             </div>
-            <div class="row p-4 mt-5 bg-white raised-box rounded">
+            <div class="row p-4 mt-4 bg-white raised-box rounded">
 
                 <div class="col-md-12 col-sm-8">
                     <h2 class="mt-2 display-6" style="display: inline;">Soifer, Scott Andrew. Vehicular Heatstroke
@@ -355,7 +390,7 @@
                             </a>
                         </p>
                 </div>
-                <div class="col-md-9 col-sm-8 mt-5">
+                <div class="col-md-9 col-sm-8 mt-4">
                     <p class="lead text-muted" style="display: inline;">The above two patents are for my Vehicular
                         Heatstroke Prevention System (VHPS)</p>
                     <p class="lead text-muted mt-4">Tragically, there have been over 850 reported
@@ -382,14 +417,14 @@
                                 </li>
 
                             </ul>
-                            <div class="dropdown" style="padding-left: 1.28571429em;">
+                            <div class="dropdown" style="padding-left: 1.28571429em; display: inline;">
                                 <button class="btn btn-outline-primary dropdown-toggle" type="button"
                                     id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
                                     aria-expanded="false">
                                     See More Awards
                                 </button>
                                 <div class="dropdown-menu"
-                                    style="border: 4px solid #ff6d00; height: auto; max-height: 500px; overflow-x: hidden; white-space: normal; max-width: 700px; width: 100%; "
+                                    style="border: 4px solid #ff6d00; height: auto; max-height: 500px; overflow-x: hidden; white-space: normal; max-width: 700px; width: max-content; "
                                     aria-labelledby="dropdownMenuButton">
                                     <div class="dropdown-item" style=" white-space: normal; margin-left: 15px;">
                                         <b>More Awards:</b>
@@ -479,13 +514,25 @@
                                         style=" white-space: normal; margin-left: 15px; margin-right: 15px;">
                                     </div>
                                     <div class="dropdown-header"></div>
+
+                                </div>
+                            </div>
+                            <div class="dropdown" style="padding-left: 1.28571429em; display: inline;">
+                                <button class="btn btn-outline-primary dropdown-toggle" type="button"
+                                    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false"> See Proclamations & Citations
+                                </button>
+                                <div class="dropdown-menu"
+                                    style="border: 4px solid #ff6d00; height: auto; max-height: 500px; overflow-x: hidden; white-space: normal; max-width: 700px; width: 700px;"
+                                    aria-labelledby="dropdownMenuButton">
                                     <div class="dropdown-item" style=" white-space: normal; margin-left: 15px;">
                                         <b>Proclamations & Citations:</b>
                                     </div>
                                     <div class=" dropdown-item"
                                         style=" white-space: normal; margin-left: 15px; margin-right: 15px;">
                                         Honorary
-                                        Citation, Regeneron Science Talent Search Scholar, Nassau County Legislature,
+                                        Citation, Regeneron Science Talent Search Scholar, Nassau County
+                                        Legislature,
                                         February 22, 2018
                                     </div>
                                     <div class="dropdown-divider"></div>
@@ -518,174 +565,239 @@
                     </ul>
 
                 </div>
-                <div class="row p-4 mt-7 bg-white raised-box rounded">
-
-                    <div class="col-md-12 col-sm-8">
-                        <h2 class="mt-2 display-6" style="display: inline;">Vasios N, Gross AJ, Soifer S, Overvelde JTB,
-                            Bertoldi K. Harnessing Viscous Flow to Simplify the Actuation of Fluidic Soft Robots.
-                            <br>Soft
-                            Robotics. 2019. Harvard University, Cambridge, Massachusetts.</h2>
-                        <!-- <p>Nam liber tempor cum eleifend option congue nihil imper. Nam liber tempor cum
+            </div>
+            <!-- TODO scroll offset -->
+            <div class="row p-4 mt-5 bg-white raised-box rounded" id="harvard-research">
+                <div class="col-md-12 col-sm-8">
+                    <h2 class="mt-2 display-6" style="display: inline;">Vasios N, Gross AJ, Soifer S, Overvelde JTB,
+                        Bertoldi K. Harnessing Viscous Flow to Simplify the Actuation of Fluidic Soft Robots.
+                        <br>Soft
+                        Robotics. 2019. Harvard University, Cambridge, Massachusetts.</h2>
+                    <!-- <p>Nam liber tempor cum eleifend option congue nihil imper. Nam liber tempor cum
                             soluta nobis.</p> -->
-                        <p class="lead mt-3" style="display: inline; padding-left:10px">
-                            <a href="https://bertoldi.seas.harvard.edu/files/bertoldi/files/vasios_soro_01.pdf"
-                                class="btn btn-outline-primary btn-sm d-inline-flex flex-row align-items-center">
-                                View Publication <i class="fa fa-sticky-note-o" style="padding-left:10px"></i><span
-                                    class="ml-1" width="18" height="18" data-feather="chevron-right"></span>
-                            </a>
-                        </p>
-                    </div>
-                    <div class="col-md-9 col-sm-8 mt-5">
-                        <p class="lead text-muted" style="display: inline;">This publication is for research I performed
-                            at Harvard Univeristy.</p>
+                    <p class="lead mt-3" style="display: inline; padding-left:10px">
+                        <a href="https://bertoldi.seas.harvard.edu/files/bertoldi/files/vasios_soro_01.pdf"
+                            class="btn btn-outline-primary btn-sm d-inline-flex flex-row align-items-center">
+                            View Publication <i class="fa fa-sticky-note-o" style="padding-left:10px"></i><span
+                                class="ml-1" width="18" height="18" data-feather="chevron-right"></span>
+                        </a>
+                    </p>
+                </div>
+                <div class="col-md-9 col-sm-8 mt-5">
+                    <p class="lead text-muted" style="display: inline;">This publication is for research I performed
+                        at Harvard Univeristy.</p>
+                    <ul class="projects_list">
+                        <li>Soft robots have a variety of innovative use applications</li>
                         <ul class="projects_list">
-                            <li>Soft robots have a variety of innovative use applications</li>
-                            <ul class="projects_list">
-                                <li>Surgery</li>
-                                <li>Rescure operations on uneven terrain</li>
-                                <li>Rehabilitation</li>
-                                <li>Biomimicry</li>
-                            </ul>
-
-                            <li>A fluidic control system allows you fluidic soft robots</li>
-                            <li></li>
+                            <li>Surgery</li>
+                            <li>Rescure operations on uneven terrain</li>
+                            <li>Rehabilitation</li>
+                            <li>Biomimicry</li>
                         </ul>
+                        <li>A fluidic control system allows you fluidic soft robots</li>
+                    </ul>
 
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">
-                                Demo Video 1
-                            </button>
-                            <div class="dropdown-menu" style="width: 800px;">
-                                <div class="embed-responsive dropdown-item embed-responsive-16by9">
-                                    <iframe class="embed-responsive-item" src="videos/Movie_S6.mp4"
-                                        allowfullscreen></iframe>
-                                </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Demo Video 1
+                        </button>
+                        <div class="dropdown-menu" style="width: 800px;">
+                            <div class="embed-responsive dropdown-item embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="videos/Movie_S6.mp4"
+                                    allowfullscreen></iframe>
                             </div>
                         </div>
-
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">
-                                Demo Video 2
-                            </button>
-                            <div class="dropdown-menu" style="width: 800px;">
-                                <div class="embed-responsive dropdown-item embed-responsive-16by9">
-                                    <iframe class="embed-responsive-item" src="videos/Movie_S8.mp4"
-                                        allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-
                     </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Demo Video 2
+                        </button>
+                        <div class="dropdown-menu" style="width: 800px;">
+                            <div class="embed-responsive dropdown-item embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="videos/Movie_S8.mp4"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
                 </div>
             </div>
+        </div>
     </section>
 
     <!--pricing section-->
-    <section class="py-7" id="pricing">
+
+    <!-- Experience -->
+    <section class="py-6" id="experience">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6 mx-auto text-center">
-                    <span class="text-muted text-uppercase">Simple pricing</span>
-                    <h2 class="display-4">Pay only when you need</h2>
-                    <p class="lead">
-                        Nam liber tempor cum eleifend option congue nihil imper. Nam liber tempor cum soluta nobis.
+            <div class="row ">
+                <div class="col-md-6 mb-2 mx-auto text-center">
+                    <h2 class="display-4" style="margin-bottom: 0px ">Experience</h2>
+                    <p class="lead text-muted"><a href="https://github.com/scottsoif">github.com/scottsoif/</a></p>
+                </div>
+            </div>
+            <!-- Columbia University, New York, NY -->
+            <div class="row mt-5">
+                <div class="col-md-10 my-auto text-center text-md-left pt-5 pt-md-0">
+                    <h2 class="display-5 about-me-title"><b>Columbia University, New York, NY</b>
+                    </h2>
+                    <!-- <h2 class="display-5 text-muted about-me-title" style="padding-left:4px;"></h2> -->
+                    <p class="lead text-muted" style="margin-bottom:0rem">February 2020 – Present</p>
+                    <ul class="projects_list" style="margin-top:0rem">
+                        <li class="text-muted">Researcher at the Center for
+                            Computational Learning Systems
+                        </li>
+                        <li class="text-muted">Research Advisor: Dr. Albert
+                            Boulanger
+                        </li>
+                        <li>Web platform for anlyzing analyzing Alzheimer's
+                            disease patient data
+                        </li>
+                    </ul>
+                    <p class="lead mt-3" style="display: inline; padding-right:10px">
+                        <a href="#thompson-CMS"
+                            class="btn btn-outline-primary btn-sm d-inline-flex flex-row align-items-center">
+                            Scroll up to learn more <i class="fa fa-arrow-up" style="padding-left:10px "></i></span>
+                        </a>
                     </p>
                 </div>
             </div>
+            <!-- HSS -->
             <div class="row mt-5">
-                <div class="col-md-11 mx-auto">
-                    <div class="card-group pricing-table">
-                        <div class="card text-center bg-light">
-                            <div class="card-body">
-                                <h4 class="card-title pt-3">Basic</h4>
-                                <h2 class="card-title text-primary pt-4">$99</h2>
-                                <div class="text-muted mt-4">per month</div>
-                                <ul class="list-unstyled pricing-list">
-                                    <li>1 campaign</li>
-                                    <li>20 media submissions</li>
-                                    <li>Pitch templates</li>
-                                    <li>Basic support</li>
-                                </ul>
-                                <a href="#" class="btn btn-primary">
-                                    Get Started
-                                </a>
+                <div class="col-md-10 my-auto text-center text-md-left pt-5 pt-md-0">
+                    <h2 class="display-5 about-me-title"><b><a
+                                href="https://github.com/scottsoif/HSS-Project-Management-System-for-ClickUp"
+                                style="color: #495057">Hospital for Special Surgery (HSS)</b>
+                    </h2>
+                    <!-- <h2 class="display-5 text-muted about-me-title" style="padding-left:4px;"></h2> -->
+                    <p class="lead text-muted" style="margin-bottom:0rem">Summer 2019</p>
+                    <ul class="experience" style="margin-top:0rem">
+                        <li class="text-muted">Device Development Intern, Department of Biomechanics
+                        </li>
+                        <li class="text-muted">Research Advisor: Dr. Albert Boulanger
+                        </li>
+                        <li>Design of implants and instrumentation for Total Knee Arthroplasty.
+                        </li>
+                        <li>Developed a data engineering platform to improve lab workflow. <ul class="experience">
+                                <li>Identified and streamlined
+                                    lab management processes using python to determine a schedule for equipment use.
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p class="lead mt-3" style="display: inline; padding-right:10px">
+                        <a href="https://github.com/scottsoif/HSS-Project-Management-System-for-ClickUp"
+                            class="btn btn-outline-primary btn-sm d-inline-flex flex-row align-items-center">
+                            Github repo <i class="fa fa-github" style="padding-left:10px"></i><span class="ml-1"
+                                width="18" height="18" data-feather="chevron-right"></span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Bel Air Electric -->
+            <div class="row mt-5">
+                <div class="col-md-10 my-auto text-center text-md-left pt-5 pt-md-0">
+                    <h2 class="display-5 about-me-title"><b>Bel-Air Electric</b>
+                    </h2>
+                    <!-- <h2 class="display-5 text-muted about-me-title" style="padding-left:4px;"></h2> -->
+                    <p class="lead text-muted" style="margin-bottom:0rem">Summer 2018</p>
+                    <ul class=" experience" style="margin-top:0rem">
+                        <li class="text-muted">Summer Intern, Electrical Engineering & Construction </li>
+                        <li>Designed and updated company website in HTML and JavaScript</li>
+                        <li>Estimated project costs for bid takeoffs using PlanSwift and Excel:
+                            <ul class="experience">
+                                <li>JFK Airport Runway Lighting</li>
+                                <li>Laguardia Airport Runway Lighting</li>
+                                <li>One World Trade Center Communications Tower and Radios</li>
+                                <li>New York State bridge electrical and lighting</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Harvard -->
+            <div class="row mt-5">
+                <div class="col-md-10 my-auto text-center text-md-left pt-5 pt-md-0">
+                    <h2 class="display-5 about-me-title" id="thompson-CMS"><b>Harvard University</b>,</h2>
+                    <h2 class="display-5 text-muted about-me-title" style="padding-left:4px;"> John A. Paulson School of
+                        Engineering and Applied Sciences</h2>
+                    <!-- <h2 class="display-5 text-muted about-me-title" style="padding-left:4px;"></h2> -->
+                    <p class="lead text-muted" style="margin-bottom:0rem">Summer 2017</p>
+                    <ul class=" experience" style="margin-top:0rem">
+                        <li class="text-muted">Summer Research Intern, Department of Solid Mechanics
+                        </li>
+                        <li class="text-muted">Research Advisor: Dr. Katia Bertoldi & Nick Vasios </li>
+                        <li>Design of implants and instrumentation for Total Knee Arthroplasty.
+                        </li>
+                        <li>Developed a data engineering platform to improve lab workflow.
+                            <ul class="experience">
+                                <li>Identified and streamlined
+                                    lab management processes using python to determine a schedule for equipment use.
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p class="lead mt-3" style="display: inline; padding-right:10px">
+                        <a href="#harvard-research"
+                            class="btn btn-outline-primary btn-sm d-inline-flex flex-row align-items-center">
+                            Scroll up to learn more <i class="fa fa-arrow-up" style="padding-left:10px "></i></span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <!-- Tufts -->
+            <div class="row mt-5">
+                <div class="col-md-10 my-auto text-center text-md-left pt-5 pt-md-0">
+                    <h2 class="display-5 about-me-title" id="thompson-CMS"><b>Tufts University</b>,</h2>
+                    <h2 class="display-5 text-muted about-me-title" style="padding-left:4px;"> CEEO (Center for
+                        Engineering and Outreach)</h2>
+                    <!-- <h2 class="display-5 text-muted about-me-title" style="padding-left:4px;"></h2> -->
+                    <p class="lead text-muted" style="margin-bottom:0rem">Summer 2017</p>
+                    <ul class=" experience" style="margin-top:0rem">
+                        <li class="text-muted">Summer Research Intern, Department of Mechanical Engineering
+                        </li>
+                        <li class="text-muted">Research Advisor: Dr. Chris Rogers, Professor & Chair</li>
+                        <li>Design of implants and instrumentation for Total Knee Arthroplasty.
+                        </li>
+                        <li>Created an autonomous grasper with object detection for the Baxter robot
+                        </li>
+                    </ul>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Demo Video 1
+                        </button>
+                        <div class="dropdown-menu" style="width: 800px;">
+                            <div class="embed-responsive dropdown-item embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="videos/Movie_S8.mp4"
+                                    allowfullscreen></iframe>
                             </div>
                         </div>
-                        <div class="card bg-primary text-white text-center">
-                            <div class="card-body">
-                                <h4 class="card-title text-white pt-3">Startup</h4>
-                                <h2 class="card-title text-white pt-4">$159</h2>
-                                <div class="text-light mt-4">per month</div>
-                                <ul class="list-unstyled pricing-list">
-                                    <li>5 campaigns</li>
-                                    <li>50 media submissions</li>
-                                    <li>Pitch templates</li>
-                                    <li>Priority support</li>
-                                </ul>
-                                <a href="#" class="btn btn-secondary">
-                                    Get started
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card text-center bg-light">
-                            <div class="card-body">
-                                <h4 class="card-title pt-3">Growth</h4>
-                                <h2 class="card-title text-primary pt-4">$499</h2>
-                                <div class="text-muted mt-4">per month</div>
-                                <ul class="list-unstyled pricing-list">
-                                    <li>10 campaigns</li>
-                                    <li>200 media submissions</li>
-                                    <li>Pitch templates</li>
-                                    <li>Premium support</li>
-                                </ul>
-                                <a href="#" class="btn btn-primary">
-                                    Get Started
-                                </a>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Demo Video 2
+                        </button>
+                        <div class="dropdown-menu" style="width: 800px;">
+                            <div class="embed-responsive dropdown-item embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="videos/Movie_S8.mp4"
+                                    allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row mt-5">
-                <div class="col-md-9 mx-auto">
-                    <div class="row">
-                        <div class="col-md-4 text-center">
-                            <div class="icon-box border-box">
-                                <div class="icon-box-inner p-2 text-primary">
-                                    <span data-feather="umbrella"></span>
-                                </div>
-                            </div>
-                            <h6 class="mb-2">Money-back guarantee</h6>
-                            <p class="text-muted small-xl">100% money back guarantee within 14 days. No worries.</p>
-                        </div>
-                        <div class="col-md-4 text-center">
-                            <div class="icon-box border-box">
-                                <div class="icon-box-inner p-2 text-primary">
-                                    <span data-feather="shield"></span>
-                                </div>
-                            </div>
-                            <h6 class="mb-2">Secure payment</h6>
-                            <p class="text-muted small-xl">Money transfers are protected with a 256-bit SSL Protocol.
-                            </p>
-                        </div>
-                        <div class="col-md-4 text-center">
-                            <div class="icon-box border-box">
-                                <div class="icon-box-inner p-2 text-primary">
-                                    <span data-feather="credit-card"></span>
-                                </div>
-                            </div>
-                            <h6 class="mb-2">Payment methods</h6>
-                            <p class="text-muted small-xl">Pay with multiple payment methods — credit card, bank
-                                transfer or PayPal.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+
         </div>
     </section>
 

@@ -76,6 +76,17 @@ $(function () {
       1000
     );
   });
+
+  // hide/show dropdown
+  $(".toggle-drp-dwn").click(function () {
+    var x = document.getElementById("crowedIt-demo");
+    if (x.innerText.indexOf("SEE DEMO") > -1) {
+      x.innerText = "Hide Demo";
+    } else {
+      x.innerText = "See Demo";
+    }
+    $(".drp-dwn").toggle();
+  });
 });
 
 //odemeter random count for videos
