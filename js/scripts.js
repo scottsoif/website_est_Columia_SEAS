@@ -87,6 +87,32 @@ $(function () {
     }
     $(".drp-dwn").toggle();
   });
+
+  var $iframe = $("#if1");
+  if ($iframe.data("src")) {
+    // only do it once per iframe
+    $iframe.prop("src", $iframe.data("src")).data("src", false);
+  }
+  var $iframe = $("#if2");
+  if ($iframe.data("src")) {
+    // only do it once per iframe
+    $iframe.prop("src", $iframe.data("src")).data("src", false);
+  }
+  var $iframe = $("#if3");
+  if ($iframe.data("src")) {
+    // only do it once per iframe
+    $iframe.prop("src", $iframe.data("src")).data("src", false);
+  }
+  var $iframe = $("#if4");
+  if ($iframe.data("src")) {
+    // only do it once per iframe
+    $iframe.prop("src", $iframe.data("src")).data("src", false);
+  }
+  // var $iframe = $(this).find("iframe");
+  // if ($iframe.data("src")) {
+  //   // only do it once per iframe
+  //   $iframe.prop("src", $iframe.data("src")).data("src", false);
+  // }
 });
 
 //odemeter random count for videos
