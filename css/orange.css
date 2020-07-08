@@ -627,6 +627,9 @@ pre code {
   .container {
     max-width: 960px;
   }
+  .top-padding {
+    margin-top: 5px;
+  }
 }
 @media (min-width: 1200px) {
   .container {
