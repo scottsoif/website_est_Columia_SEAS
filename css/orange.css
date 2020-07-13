@@ -622,6 +622,10 @@ pre code {
   .container {
     max-width: 720px;
   }
+  .photo-creds {
+    position: absolute;
+    bottom: 0;
+  }
 }
 @media (min-width: 992px) {
   .container {
@@ -9768,6 +9772,12 @@ ul.experience li:before {
 footer ul > li {
   padding: 0.5rem;
 }
+.flat-link {
+  color: #495057;
+}
+.flat-link :hover {
+  color: #ff6d00;
+}
 
 footer a {
   color: rgba(255, 255, 255, 0.7);
@@ -9786,7 +9796,7 @@ footer .about {
   width: 45px;
   height: 45px;
   background: rgba(255, 255, 255, 0.2);
-  display: block;
+  /* display: block; */
   text-align: center;
   color: rgba(255, 255, 255, 0.6);
   border-radius: 4px;
