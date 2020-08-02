@@ -110,6 +110,7 @@ $(function () {
   }
 });
 
+// speed improvements - only load gif when dropdown clicked
 function loadGIF() {
   document.getElementById("gif1").src = "demo_GIFs/CrowdIt_Tap_marker.gif";
   document.getElementById("gif2").src = "demo_GIFs/CrowdIt_Place_Search.gif";
