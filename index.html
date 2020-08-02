@@ -83,7 +83,7 @@
             <div class="row  vh-md-100">
                 <div class="col-md-8 my-md-auto text-center text-md-left">
                     <h1 class="display-3 text-white font-weight-bold">Born Inventor & Innovator</h1>
-                    <p class="col-md-7 lead text-light my-4">TWO patents Granted with others pending</p>
+                    <p class="col-md-7 lead text-light my-4">TWO patents <b>granted</b> with others pending</p>
                     <p class="col-md-7 lead text-light my-4">I have a knack for coding or building anything and
                         everything that improves the quality of life for people</p>
                     <a href="#about" class="btn btn-primary page-scroll my-2">Learn More</a>
@@ -109,12 +109,13 @@
                 </div>
                 <div class="col-md-6 my-auto text-center text-md-left pt-5 pt-md-0">
 
-                    <h2 class="display-4 about-me-title">Inventor &</h2>
+                    <h2 class="display-4 about-me-title">Inventor </h2>
+                    <h2 class="display-4 about-me-title text-muted">& </h2>
                     <h2 class="display-5 text-muted about-me-title"> Student at
                         Columbia University, School of Engineering and Applied Science. Class of 2022.
                     </h2>
 
-                    <ul class="projects_list"> 
+                    <ul class="projects_list">
                         <li>Computer Science Major</li>
                         <li>Mechanical Engineering Minor</li>
                         <li><a href="#patents">Invented device to prevent children from dying in hot cars</a></li>
@@ -248,7 +249,7 @@
                     <h2 class="display-5 about-me-title"><a href="https://github.com/scottsoif/CrowdIt"
                             class="flat-link"><b>CrowdIt</b></h2>
                     <h2 class="display-5 text-muted about-me-title" style="padding-left:5px;"> is an iPhone app
-                        inspired by COVID-19
+                        created for COVID-19
                     </h2><i class="fa fa-link"></i></a>
                     <p class="lead text-muted">Swift | MySQL | PHP</p>
                     <ul class="projects_list">
@@ -272,7 +273,7 @@
                         </a>
                     </p>
                     <p class="lead mt-3" style="display: inline;">
-                        <button
+                        <button onclick="loadGIF()"
                             class=" btn btn-primary toggle-drp-dwn btn-sm d-inline-flex flex-row align-items-center"><span
                                 id="crowedIt-demo">See demo</span><span><i class="fa fa-code"
                                     style="padding-left:10px"></i></span>
@@ -284,16 +285,16 @@
                         <div class="row">
                             <div class="col-sm-4">
                                 <p>Tap on any business market to get current occupancy</p>
-                                <img src="demo_GIFs/CrowdIt_Tap_marker.gif" style="width:100%">
+                                <img id="gif1" style="width:100%">
                             </div>
                             <div class="col-sm-4">
                                 <p>Search your favorite store to see how crowded it is</p>
-                                <img src="demo_GIFs/CrowdIt_Place_Search.gif" style="width:100%">
+                                <img id="gif2" style="width:100%">
                             </div>
                             <div class="col-sm-4">
                                 <p>Toggle the switch to allow anonymous background tracking</p>
 
-                                <img src="demo_GIFs/CrowdIt_BackgroundLocationBtn.gif" style="width:100%">
+                                <img id="gif3" style="width:100%">
                             </div>
 
                         </div>
@@ -329,7 +330,7 @@
                                 <li style="padding-bottom: 0">These studies include EFIGA, WHICAP, PhenoGenetic
                                     (REDCap).</li>
                                 <li style="padding-bottom: 0">More studies are in the process of being added to
-                                    our db. </li>
+                                    our database. </li>
                             </ul>
                         </li>
                         <li>An interactive Dash Plotly Pivottable allows researchers to examine these studies in
@@ -461,7 +462,7 @@
                                 <button class="btn btn-outline-primary dropdown-toggle" type="button"
                                     id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
                                     aria-expanded="false">
-                                    See More Awards
+                                    More Awards
                                 </button>
                                 <div class="dropdown-menu"
                                     style="border: 4px solid #ff6d00; height: auto; max-height: 500px; overflow-x: hidden; white-space: normal; max-width: 700px; width: max-content; "
@@ -560,7 +561,7 @@
                             <div class="dropdown" style="padding-left: 1.28571429em; display: inline;">
                                 <button class="btn btn-outline-primary dropdown-toggle" type="button"
                                     id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false"> See Proclamations & Citations
+                                    aria-expanded="false"> Proclamations & Citations
                                 </button>
                                 <div class="dropdown-menu"
                                     style="border: 4px solid #ff6d00; height: auto; max-height: 500px; overflow-x: hidden; white-space: normal; max-width: 700px; width: 700px;"
@@ -729,7 +730,7 @@
                     <p class="lead mt-3" style="display: inline; padding-left:10px">
                         <a href="https://youtube.com/embed/PJaxETyDt8g"
                             class="btn btn-outline-primary btn-sm d-inline-flex flex-row align-items-center">
-                            Video Demo 1<i class="fa fa-film" style="padding-left:10px"></i><span class="ml-1"
+                            Video Demo 2<i class="fa fa-film" style="padding-left:10px"></i><span class="ml-1"
                                 width="18" height="18" data-feather="chevron-right"></span>
                         </a>
                     </p>
@@ -781,8 +782,9 @@
             <!-- Columbia University, New York, NY -->
             <div class="row mt-5">
                 <div class="col-md-10 my-auto text-center text-md-left pt-5 pt-md-0">
-                    <h2 class="display-5 about-me-title"><b>Columbia University, New York, NY</b>
+                    <h2 class="display-5 about-me-title"><b>Columbia University, </b>
                     </h2>
+                    <h2 class="display-5 about-me-title text_muted">New York, NY </h2>
                     <!-- <h2 class="display-5 text-muted about-me-title" style="padding-left:4px;"></h2> -->
                     <p class="lead text-muted" style="margin-bottom:0rem">February 2020 – Present</p>
                     <ul class="projects_list" style="margin-top:0rem">
@@ -809,8 +811,9 @@
                 <div class="col-md-10 my-auto text-center text-md-left pt-5 pt-md-0">
                     <h2 class="display-5 about-me-title"><a
                             href="https://github.com/scottsoif/HSS-Project-Management-System-for-ClickUp"
-                            class="flat-link"><b>Hospital for Special Surgery (HSS), New York, NY</b>
-                    </h2><i class="fa fa-link"></i></a>
+                            class="flat-link"><b>Hospital for Special Surgery (HSS),</b>
+                    </h2>
+                    <h2 class="display-5 about-me-title text_muted">New York, NY </h2><i class="fa fa-link"></i></a>
                     <!-- <h2 class="display-5 text-muted about-me-title" style="padding-left:4px;"></h2> -->
                     <p class="lead text-muted" style="margin-bottom:0rem">Summer 2019</p>
                     <ul class="experience" style="margin-top:0rem">
@@ -840,8 +843,9 @@
             <!-- Bel Air Electric -->
             <div class="row mt-5">
                 <div class="col-md-10 my-auto text-center text-md-left pt-5 pt-md-0">
-                    <h2 class="display-5 about-me-title"><b>Bel-Air Electric</b>
+                    <h2 class="display-5 about-me-title"><b>Bel-Air Electric,</b>
                     </h2>
+                    <h2 class="display-5 about-me-title text_muted">Hewlett, NY </h2>
                     <!-- <h2 class="display-5 text-muted about-me-title" style="padding-left:4px;"></h2> -->
                     <p class="lead text-muted" style="margin-bottom:0rem">Summer 2018</p>
                     <ul class=" experience" style="margin-top:0rem">
@@ -906,36 +910,12 @@
                         </a>
                     </p>
                     <p class="lead mt-3" style="display: inline; padding-left:10px">
-                        <a href="https://youtube.com/embed/AZMZ3vCQl1w"
+                        <a href="https://youtu.be/oO6AaHnvsko"
                             class="btn btn-outline-primary btn-sm d-inline-flex flex-row align-items-center">
-                            Video Demo 1<i class="fa fa-film" style="padding-left:10px"></i><span class="ml-1"
+                            Video Demo 2<i class="fa fa-film" style="padding-left:10px"></i><span class="ml-1"
                                 width="18" height="18" data-feather="chevron-right"></span>
                         </a>
                     </p>
-                    <!-- <div class="btn-group">
-                        <button type="button" class="btn btn-outline-primary" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                            Video Demo 1<i class="fa fa-film" style="padding-left:10px"></i>
-                        </button>
-                        <div class="dropdown-menu" style="width: 800px;">
-                            <div class="embed-responsive dropdown-item embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" id="if3"
-                                    src="https://youtube.com/embed/AZMZ3vCQl1w" allowfullscreen autoplay></iframe>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-outline-primary" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                            Video Demo 2 <i class="fa fa-film" style="padding-left:10px"></i>
-                        </button>
-                        <div class="dropdown-menu" style="width: 800px;">
-                            <div class="embed-responsive dropdown-item embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" id="if3"
-                                    src="https://youtube.com/embed/AZMZ3vCQl1w" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
             </div>
 
@@ -949,7 +929,7 @@
             <div class="row">
                 <div class="col-md-6 mx-auto text-center">
                     <span class="text-muted text-uppercase">Answers to common questions about me</span>
-                    <h2 class="display-4">Frequently asked questions</h2>
+                    <h2 class="display-4">Frequently Asked Questions</h2>
                 </div>
             </div>
             <div class="row mt-3">
@@ -960,11 +940,12 @@
                                 received them?
                             </h5>
                             <p class="text-muted">
-                                I would take them apart and ensure I understood how they work and then reassemble them.
+                                I would take them apart and ensure I understood how they worked and then reassemble
+                                them.
                             </p>
                         </div>
                         <div class="col-md-6 mb-4">
-                            <h5>Why did you often miss class in middle and high school</h5>
+                            <h5>Why did you often miss class in middle and high school?</h5>
                             <p class="text-muted">
                                 Multiple teachers would pull me out of class to fix their
                                 computers and AV equipment.
@@ -1019,31 +1000,6 @@
                     <h2 class="display-4" style="margin-bottom: 0px ">Home Improvement Services</h2>
                 </div>
             </div>
-            <!-- Columbia University, New York, NY -->
-            <!-- <div class="row mt-5">
-                <div class="col-md-10 my-auto text-center text-md-left pt-5 pt-md-0">
-                    <h2 class="display-5 about-me-title"><b>Columbia University, New York, NY</b>
-                    </h2>
-                    <p class="lead text-muted" style="margin-bottom:0rem">February 2020 – Present</p>
-                    <ul class="projects_list" style="margin-top:0rem">
-                        <li class="text-muted">Researcher at the Center for
-                            Computational Learning Systems
-                        </li>
-                        <li class="text-muted">Research Advisor: Dr. Albert
-                            Boulanger
-                        </li>
-                        <li>Web platform for anlyzing analyzing Alzheimer's
-                            disease patient data
-                        </li>
-                    </ul>
-                    <p class="lead mt-3" style="display: inline; padding-right:10px">
-                        <a href="#thompson-CMS"
-                            class="btn btn-outline-primary btn-sm d-inline-flex flex-row align-items-center">
-                            Scroll up to learn more <i class="fa fa-arrow-up" style="padding-left:10px "></i>
-                        </a>
-                    </p>
-                </div>
-            </div> -->
 
             <div id="demo" class="carousel slide" data-ride="carousel">
                 <ul class="carousel-indicators">
@@ -1121,7 +1077,7 @@
                     <h1 class="display-3 text-white">Contact Me</h1>
                     <p class="lead text-light"><a href="https://www.linkedin.com/in/scott-soifer/"
                             class="text-light ">Connect on
-                            LinkedIn <i class="fa fa-linkedin"></i></a></p>
+                            <b>LinkedIn</b></a></p>
                 </div>
                 <div class="col-md-5 ml-auto">
                     <div class="card">

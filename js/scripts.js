@@ -108,12 +108,14 @@ $(function () {
     // only do it once per iframe
     $iframe.prop("src", $iframe.data("src")).data("src", false);
   }
-  // var $iframe = $(this).find("iframe");
-  // if ($iframe.data("src")) {
-  //   // only do it once per iframe
-  //   $iframe.prop("src", $iframe.data("src")).data("src", false);
-  // }
 });
+
+function loadGIF() {
+  document.getElementById("gif1").src = "demo_GIFs/CrowdIt_Tap_marker.gif";
+  document.getElementById("gif2").src = "demo_GIFs/CrowdIt_Place_Search.gif";
+  document.getElementById("gif3").src =
+    "demo_GIFs/CrowdIt_BackgroundLocationBtn.gif";
+}
 
 //odemeter random count for videos
 function getRandomInt(min, max) {
