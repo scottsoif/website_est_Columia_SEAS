@@ -151,7 +151,9 @@ function submitToAPI(e) {
     data: JSON.stringify(data),
     success: function () {
       // clear form and show a success message
-      $("#form-status").html("<p>Thanks for reaching out!</p>");
+      $("#form-status").html(
+        '<h2 class="display-5 about-me-title">Thanks for reaching out!</h2>'
+      );
       // alert("Successfull");
       // document.getElementById("contact-form").reset();
       // location.reload();
