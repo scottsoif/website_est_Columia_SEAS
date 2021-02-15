@@ -262,7 +262,8 @@
                             </ul>
                         </li>
                         <li>Runs in background and sends location data and the devices 'identifierForVendor' to
-                            <i>MySQL</i> database. </li>
+                            <i>MySQL</i> database.
+                        </li>
                         <li>Utilizes <i>Google Places API</i> and <i>Maps SDK for ios.</i></li>
                     </ul>
                     <p class="lead mt-3" style="display: inline; padding-right:10px">
@@ -691,7 +692,8 @@
                         JTB,
                         Bertoldi K. Harnessing Viscous Flow to Simplify the Actuation of Fluidic Soft Robots.
                         <br>Soft
-                        Robotics. 2019. Harvard University, Cambridge, Massachusetts.</h2>
+                        Robotics. 2019. Harvard University, Cambridge, Massachusetts.
+                    </h2>
                     <!-- <p>Nam liber tempor cum eleifend option congue nihil imper. Nam liber tempor cum
                             soluta nobis.</p> -->
                     <p class="lead mt-3" style="display: inline; padding-left:10px">
@@ -792,7 +794,7 @@
                         <li class="text-muted">Lead Backend Developer
                         </li>
                         <li>Developed the backend platform for a social media app with the beta launch on track for
-                            early January 2021
+                            mid-March 2021
                             <ul class="experience">
                                 <li>Created a REST API using Django (deployed on Heroku) </li>
                                 <li>Implemented user profile database, newsfeed, and some secret features...</li>
@@ -1111,23 +1113,30 @@
                 </div>
                 <div class="col-md-5 ml-auto">
                     <div class="card">
-                        <div class="card-body p-4">
-                            <form class="signup-form">
-                                <p class="lead text-danger">Feature Coming Soon - NOT ACTIVE YET</p>
+                        <div id="form-status" class="card-body p-4">
+                            <h2 class="display-5 about-me-title">Thanks for reaching out!</h2>
+                            <!--                             
+                            <form id="contact-form" class="signup-form">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Full name">
+                                    <input type="text" id="name-input" class="form-control" placeholder="Full name"
+                                        required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Email address">
+                                    <input type="email" id="email-input" class="form-control"
+                                        placeholder="Email address" required>
                                 </div>
                                 <div class="form-group">
-                                    <textarea class="form-control" placeholder="Short message"></textarea>
+                                    <textarea id="body-input" class="form-control" placeholder="Short message"
+                                        required></textarea>
                                 </div>
 
                                 <div class="form-group">
-                                    <button class="btn btn-primary btn-block">Send</button>
+                                    <button type="submit" onClick="submitToAPI(event)"
+                                        class="btn btn-primary btn-block">Send</button>
                                 </div>
-                            </form>
+                            </form> -->
+
+
                         </div>
                     </div>
                 </div>
@@ -1163,7 +1172,7 @@
             </div>
             <div class="row mt-5">
                 <div class="col-12  col-xs-12 text-muted text-center small-xl">
-                    <p>&copy; 2020 Scott Soifer. All rights reserved.</p>
+                    <p>&copy; 2021 Scott Soifer. All rights reserved.</p>
                 </div>
             </div>
         </div>

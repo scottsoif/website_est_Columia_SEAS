@@ -12,6 +12,8 @@ $(function () {
 
   //page scroll
   $("a.page-scroll").bind("click", function (event) {
+    console.log("hi");
+
     var $anchor = $(this);
     $("html, body")
       .stop()
@@ -116,6 +118,49 @@ function loadGIF() {
   document.getElementById("gif2").src = "demo_GIFs/CrowdIt_Place_Search.gif";
   document.getElementById("gif3").src =
     "demo_GIFs/CrowdIt_BackgroundLocationBtn.gif";
+}
+
+// function submitToAPI(form) {
+//   var data = JSON.stringify($(form).serializeArray()); //  <-----------
+
+//   console.log(data);
+//   return false;
+// }
+
+function submitToAPI(e) {
+  e.preventDefault();
+
+  var name = $("#name-input").val();
+  var email = $("#email-input").val();
+  var body = $("#body-input").val();
+  var data = {
+    name: name,
+    email: email,
+    body: body,
+  };
+
+  $.ajax({
+    method: "POST",
+    url:
+      "https://bvx9uta0c3.execute-api.us-east-1.amazonaws.com/production/submit",
+    dataType: "json",
+    crossDomain: "true",
+    headers: {
+      "Content-Type": "application/json charset=utf-8",
+    },
+    data: JSON.stringify(data),
+    success: function () {
+      // clear form and show a success message
+      $("#form-status").html("<p>Thanks for reaching out!</p>");
+      // alert("Successfull");
+      // document.getElementById("contact-form").reset();
+      // location.reload();
+    },
+    error: function () {
+      // show an error message
+      alert("UnSuccessfull");
+    },
+  });
 }
 
 //odemeter random count for videos
