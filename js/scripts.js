@@ -79,7 +79,7 @@ $(function () {
     );
   });
 
-  // hide/show dropdown
+  // hide/show dropdown for crowdit
   $(".toggle-drp-dwn").click(function () {
     var x = document.getElementById("crowedIt-demo");
     if (x.innerText.indexOf("SEE DEMO") > -1) {
@@ -88,6 +88,17 @@ $(function () {
       x.innerText = "See Demo";
     }
     $(".drp-dwn").toggle();
+  });
+
+  // hide/show dropdown for robot
+  $(".toggle-drp-dwn-robot").click(function () {
+    var x = document.getElementById("robot-demo");
+    if (x.innerText.indexOf("SEE DEMO") > -1) {
+      x.innerText = "Hide Demo";
+    } else {
+      x.innerText = "See Demo";
+    }
+    $(".drp-dwn-robot").toggle();
   });
 
   var $iframe = $("#if1");
