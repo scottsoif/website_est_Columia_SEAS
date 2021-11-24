@@ -120,6 +120,14 @@ function loadGIF() {
     "demo_GIFs/CrowdIt_BackgroundLocationBtn.gif";
 }
 
+// speed improvements - only load gif when dropdown clicked
+function loadImages() {
+  document.getElementById("pic1").src = "img/robot/pic2.png";
+  document.getElementById("pic2").src = "img/robot/pic1.png";
+  document.getElementById("pic3").src = "img/robot/pic6.png";
+  document.getElementById("pic4").src = "img/robot/pic7.png";
+}
+
 // function submitToAPI(form) {
 //   var data = JSON.stringify($(form).serializeArray()); //  <-----------
 
@@ -141,8 +149,7 @@ function submitToAPI(e) {
 
   $.ajax({
     method: "POST",
-    url:
-      "https://bvx9uta0c3.execute-api.us-east-1.amazonaws.com/production/submit",
+    url: "https://bvx9uta0c3.execute-api.us-east-1.amazonaws.com/production/submit",
     dataType: "json",
     crossDomain: "true",
     headers: {
