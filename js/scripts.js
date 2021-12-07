@@ -94,9 +94,9 @@ $(function () {
   $(".toggle-drp-dwn-robot").click(function () {
     var x = document.getElementById("robot-demo");
     if (x.innerText.indexOf("SEE DEMO") > -1) {
-      x.innerText = "Hide Demo";
+      x.innerText = "Hide Pics";
     } else {
-      x.innerText = "See Demo";
+      x.innerText = "See Pics";
     }
     $(".drp-dwn-robot").toggle();
   });
