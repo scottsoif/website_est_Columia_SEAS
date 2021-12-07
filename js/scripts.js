@@ -93,7 +93,7 @@ $(function () {
   // hide/show dropdown for robot
   $(".toggle-drp-dwn-robot").click(function () {
     var x = document.getElementById("robot-demo");
-    if (x.innerText.indexOf("SEE DEMO") > -1) {
+    if (x.innerText.indexOf("SEE PICS") > -1) {
       x.innerText = "Hide Pics";
     } else {
       x.innerText = "See Pics";
